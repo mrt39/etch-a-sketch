@@ -1,5 +1,5 @@
 
-  var user_size_input = 16
+  var user_size_input = 17
 
   changeSize(user_size_input)
 
@@ -46,7 +46,16 @@ for (let i = 1; i < requested_size; i++) {
         k_Divs[k].setAttribute('id', `div_no_${(k-1)*16+i}`); 
 
         //create borders
-        k_Divs[k].setAttribute('style', 'border: 1px solid black; height: 100% '); 
+        k_Divs[k].setAttribute('style', 'border: 1px solid black; height: 100% ;'); 
+
+        //set an attribute that will help us identify these divs when we select them
+        k_Divs[k].setAttribute('data-src', ''); 
+
+                //and for each one we add a 'click' listener
+                k_Divs[k].addEventListener('mouseover', () => {
+                    console.log(k_Divs[k].id);
+                    k_Divs[k].style.backgroundColor = "black";
+                });
 
         i_Divs[i].appendChild(k_Divs[k]); 
     }    
@@ -57,4 +66,3 @@ for (let i = 1; i < requested_size; i++) {
     
 }
 
-     
