@@ -4,3 +4,11 @@
   box-sizing: border-box;
   font-family: roboto, serif;
 }
+
+
+
+#wholePalette {
+  display: flex;
+  justify-content: center;
+  gap: 20px  
+}
