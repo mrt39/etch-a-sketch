@@ -15,15 +15,8 @@
 
   display: flex;
   align-items: stretch;
-
-/*  display: block;
-overflow: auto; */
-
- width: 576px;
- height: 576px;  
-
-
-/* border: 1px solid black; */
+  width: 576px;
+  height: 576px;  
   
 }
 
