@@ -8,32 +8,29 @@ for (let i = 1; i < 17; i++) {
     i_Divs[i] = document.createElement('div');
     //set the id of the div to the number of the div
     i_Divs[i].setAttribute('id', `column_no_${i}`); 
-    //i_Divs[i].innerHTML =  `Column no: ${i}`
 
-    //create borders
-    //i_Divs[i].setAttribute('style', 'width: 100%; height: 100%;'); 
-    //i_Divs[i].setAttribute('style', 'overflow: hidden; background-size: cover;');
-    i_Divs[i].setAttribute('style', 'color: blue; border: 1px solid black; width: 100%; ');    
+
+    //set style 
+    i_Divs[i].setAttribute('style', 'display: flex; flex-direction: column; align-content: stretch; width: 100%; ');    
 
     const palette = document.querySelector(('#wholePalette'))
 
     palette.appendChild(i_Divs[i])
 
 
- /*   for (let k = 1; k < 17; k++) {
+    for (let k = 1; k < 17; k++) {
 
         k_Divs[k] = document.createElement('div');
         //set the id of the div to the number of the div
         k_Divs[k].setAttribute('id', `div_no_${(k-1)*16+i}`); 
-        //k_Divs[k].innerHTML =  `${(k-1)*16+i}`;
 
         //create borders
-        k_Divs[k].setAttribute('style', 'color: blue; border: 1px solid black; '); 
+        k_Divs[k].setAttribute('style', 'border: 1px solid black; height: 100% '); 
 
         i_Divs[i].appendChild(k_Divs[k]); 
-    }    */
+    }    
 
-  }  
+}  
 
   var user_size_input = 16
 
