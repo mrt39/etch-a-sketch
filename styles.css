@@ -7,16 +7,18 @@
 
 #paletteContainer {
   display: flex;
-  justify-content: center;
-  
+  justify-content: space-evenly;
+  align-items: center;
+
 }
 
 #wholePalette {
 
   display: flex;
   align-items: stretch;
-  width: 576px;
-  height: 576px;  
+  width: 600px;
+  height: 600px;  
+  margin-right: 52px;
   
   
 }
@@ -30,4 +32,10 @@
 #btnChangeSize{
   padding: 10px;
   font-size: large;
+}
+
+#btnRainbow{
+  padding: 10px;
+  font-size: large;
+  
 }
