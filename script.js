@@ -71,7 +71,7 @@ for (let i = 1; i < requested_size; i++) {
         k_Divs[k].setAttribute('id', `div_no_${(k-1)*16+i}`); 
 
         //create borders
-        k_Divs[k].setAttribute('style', 'border: 1px solid black; height: 100% ;'); 
+        k_Divs[k].setAttribute('style', 'border: 1px solid black; height: 100% ; background-color: white'); 
 
         //set an attribute that will help us identify these divs when we select them
         k_Divs[k].setAttribute('data-src', ''); 
