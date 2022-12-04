@@ -5,10 +5,35 @@
   font-family: roboto, serif;
 }
 
-
-
-#wholePalette {
+#paletteContainer {
   display: flex;
   justify-content: center;
-  gap: 20px  
+  
+}
+
+#wholePalette {
+
+  display: flex;
+  align-items: stretch;
+
+/*  display: block;
+overflow: auto; */
+
+ width: 576px;
+ height: 576px;  
+
+
+/* border: 1px solid black; */
+  
+}
+
+#changeSize {
+  display: flex;
+  justify-content: center;
+  
+}
+
+#btnChangeSize{
+  padding: 10px;
+  font-size: large;
 }
